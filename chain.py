@@ -5,7 +5,7 @@ import os
 from langchain_groq.chat_models import ChatGroq
 
 api_key = os.getenv("GROQ_API_KEY") or "your-groq-api-key"
-llm = ChatGroq(model="llama-3.1-8b-instant", api_key="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")
+llm = ChatGroq(model="llama-3.1-8b-instant", api_key="#")
 
 
 # Generation Prompt
@@ -39,3 +39,4 @@ llm = ChatGroq(model="llama-3.1-8b-instant")
 # Chains
 generation_chain = generation_prompt | llm
 reflection_chain = reflection_prompt | llm
+
